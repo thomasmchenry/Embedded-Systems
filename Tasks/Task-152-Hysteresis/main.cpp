@@ -23,7 +23,7 @@ int main()
         
         if (potVal > 0x8000) {
             redLED = 1;
-            buzz.playTone("C");
+            buzz.playTone("G");
         } else {
             redLED = 0;
             buzz.rest();
