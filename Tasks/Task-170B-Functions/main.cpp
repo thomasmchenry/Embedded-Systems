@@ -7,7 +7,7 @@ DigitalOut LED_RED_LE(LED_RED_LE_PIN);
 DigitalOut LED_GRN_LE(LED_GRN_LE_PIN);
 DigitalOut LED_BLUE_LE(LED_BLUE_LE_PIN);
 
-void led_init(unsigned int dat, bool en, )
+void led_init(unsigned int dat, char g)
 {
     //Disable the LED outputs
     LED_BAR_OE = 1;
@@ -31,9 +31,7 @@ void led_init(unsigned int dat, bool en, )
     LED_GRN_LE  = 0;
     LED_BLUE_LE  = 0;
 
-    if (en == true) {
-        LED_BAR_OE = 0;
-    }
+    
 }
 
 int main()
